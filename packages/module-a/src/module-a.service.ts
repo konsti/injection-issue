@@ -1,4 +1,4 @@
-import type { ModuleBService } from '@company/module-b';
+import { ModuleBService } from '@company/module-b';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
