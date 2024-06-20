@@ -4,7 +4,6 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
@@ -18,6 +17,7 @@
   "packageManager": "npm@10.2.3",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "services/*"
   ]
 }
