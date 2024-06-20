@@ -1,5 +1,5 @@
 {
-  "name": "injection-issue",
+  "name": "@company/injection-issue",
   "private": true,
   "scripts": {
     "build": "turbo build",

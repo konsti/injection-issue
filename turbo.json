@@ -6,10 +6,11 @@
       "inputs": ["$TURBO_DEFAULT$", ".env", ".env.*"],
       "outputs": ["dist/**"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
+    "wait": {
+      "cache": false
     },
     "dev": {
+      "dependsOn": ["^wait"],
       "cache": false,
       "persistent": true
     }
