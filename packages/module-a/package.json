@@ -3,20 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "swc src --out-dir dist --config-file .swcrc",
+    "build": "swc ./src --out-dir ./dist --strip-leading-paths --config-file .swcrc",
     "dev": "npm run build -- --watch",
-    "wait": "wait-on dist/src/index.js",
+    "wait": "wait-on dist/index.js",
     "test": "jest"
   },
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "types": "src/index.ts",
-  "exports": {
-    ".": {
-      "transpiled": "./dist/src/index.js",
-      "types": "./src/index.ts",
-      "default": "./dist/src/index.js"
-    }
-  },
   "devDependencies": {
     "@company/typescript-config": "*",
     "@swc/cli": "^0.3.12",

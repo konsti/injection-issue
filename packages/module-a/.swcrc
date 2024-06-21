@@ -4,9 +4,15 @@
   "jsc": {
     "parser": {
       "syntax": "typescript",
-      "decorators": true
+      "decorators": true,
+      "tsx": false
     },
-    "baseUrl": "./"
+    "target": "es2021",
+    "keepClassNames": true,
+    "transform": {
+      "decoratorMetadata": true,
+      "legacyDecorator": true
+    }
   },
   "module": {
     "type": "commonjs"
